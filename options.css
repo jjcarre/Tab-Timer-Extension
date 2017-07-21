@@ -10,22 +10,6 @@ body {
 button#newAlarm {
     margin-bottom: 10px;
 }
-/*
-table {
-    border-collapse: collapse;
-    margin-top: 20px;
-    width:100%
-}
-
-tr.header {
-    font-weight: bold;
-    text-align: center;
-}
-
-table, td, th {
-    border: 1px solid black;
-}
-*/
 
 i { 
     padding:0px 10px;
