@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Timer</title> 
+    
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="addAlarm.js"></script>
+    <script src="modal-toggle.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="options.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="alarmModal" class="modal">
+        <div class="modal-content">
+            <form id="alarmForm">
+                URL:<br>
+                <input id="addURL" type="url" name="url" required><br>
+                Time:<br>
+                <input id="addTime" type="datetime-local" name="time" required><br>
+                <select id="addRepeat" name="repeat">
+                    <option value="once">Once</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+                <select id="addActive" name="active">
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </select>
+                <input type="submit" value="Add Alarm">
+            </form>
+        </div>
+    </div>
+    
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <form id="editForm">
+                URL:<br>
+                <input id="editURL" type="url" name="url" required><br>
+                Time:<br>
+                <input id="editTime" type="datetime-local" name="time" required><br>
+                <select id="editRepeat" name="repeat">
+                    <option value="once">Once</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+                <select id="editActive" name="active">
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </select>
+                <input id="hiddenEdit" type="hidden">
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    </div>
+    
+    <div id="options">
+    <button id="newAlarm">New Alarm</button>
+    
+    <table class="table table-bordered" id="alarms">
+        <tr id="header">
+            <th>URL</th>
+            <th>Time</th>
+            <th>Repeat</th>
+            <th>Active</th>
+            <th>Edit</th>
+        </tr>
+    
+    </table>
+    </div>
+</body>
+</html>
