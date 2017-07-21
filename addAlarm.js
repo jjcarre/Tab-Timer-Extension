@@ -66,7 +66,7 @@ $(document).on('submit', '#alarmForm', function(event) {
 });
 
 // Modify current alarm and hide edit modal
-$("#editForm").submit(function(event) {
+$(document).on('submit', '#editForm', function(event) {
     var d = new Date($("#editTime").val());
     var alarmUrl = $("#editURL").val();
     var repeat = $("#editRepeat").val();
