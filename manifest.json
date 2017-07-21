@@ -14,9 +14,8 @@
   "permissions": [
       "tabs", "alarms", "storage"
   ],
-  "options_page":  "options.html",
   "options_ui": {
-   /"page":  "options.html",
+    "page":  "options.html",
     "chrome_style": true
   }
        
